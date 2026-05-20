@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+* { /* Global Styles */
+     font-family: "Inter", sans-serif;
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+     color: #243e63;
+}
+
+body {  /* Global Styles */
+    max-width: 100vw;
+    overflow-x: hidden;
+}
+
+.row { /* Row Styles */
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.row__narrow { /* Narrow Row Styles */
+    width: 100%;
+    max-width: 1024px;
+    margin: 0 auto;
+}
+
+.container { /* Container Styles */
+    padding: 96px 0;
+}
+
+.purple { /* Purple Text Styles */
+    color: #6415ff;
+}
+
+section { /* Section Styles */
+    padding: 96px 0;
+} 
+
+main { /* Main Styles */
+    margin-bottom: 96px;
+}
+
+
+/*
+ NAVIGATION
+*/
+
+
+nav { /* Navigation Styles */
+    display: flex;
+    padding-top: 32px;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.nav__row { /* Navigation Row Styles */
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav__logo { /* Navigation Logo Styles */
+     font-size: 24px;
+     font-weight: 700;
+    display: flex;
+    align-items: center;
+    margin: 8px 0;
+    padding-bottom: 4px;
+}
+
+.btn__menu { /* Menu Button Styles */
+    display: none;
+    background: transparent;
+    border: none;
+    transition: all 300ms ease;
+}
+
+
+.btn__menu--svg:hover { /* Menu Button Hover Styles */
+    filter: invert(26%) sepia(94%) saturate(7476%) hue-rotate(261deg) brightness(94%) contrast(115%);
+}
+
+.modal { 
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 378px;
+    margin: 24px 16px;
+    padding: 32px;
+    background-color: #fff;
+    border: 1px solid rgb(229, 231, 235);
+    border-radius: 8px;
+    z-index: 4;
+    visibility: hidden;
+    opacity: 0;
+    transform: translate(300%);
+    transition: all 300ms ease;
+}
+
+.modal__links {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.modal__link {
+    color: #1a202c;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 1.5;
+    margin: 8px 0;
+    padding-bottom: 4px;
+    border-bottom: 2px solid transparent;
+}
+
+.modal__link--primary {
+    color: #f7fafc;
+    padding: 12px 32px;
+    background-color: #6415ff;
+    border-radius: 500px;
+    border: none;
+}
+
+.menu--open .modal {
+    visibility: visible;
+    opacity: 1;
+    transform: translate(0);
+}
+
+.btn__menu--close {
+    position: fixed;
+    top: 24px;
+    right: 18px;
+}
