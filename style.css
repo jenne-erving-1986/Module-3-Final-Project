@@ -1340,9 +1340,9 @@ footer {
 }
 
 
-.footer-link:hover::after {
-    width: 100%;
-}
+.footer__column--link:hover::after {
+  opacity: 1;
+  width: 100%;
 
 
 
