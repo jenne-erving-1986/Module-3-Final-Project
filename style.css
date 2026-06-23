@@ -629,7 +629,7 @@ section {
     fill: rgb(100, 21, 255);
     --tw-text-opacity: 1;
     color: rgb(100, 21, 255, var(--tw-text-opacity));
-    z-index: 0;
+    z-index: -1;
     display: block;
 }
 
